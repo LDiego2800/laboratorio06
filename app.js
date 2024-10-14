@@ -1,11 +1,9 @@
 const preguntaNombre = prompt("¿Cual es tu nombre?");
 let preguntaGustos = prompt("¿Te gusta la programación?");
-const colorFondo = prompt("Elige de que color quieres que se muestre esta pagina");
 const preguntaEdad = prompt("¿Cual es tu edad?");
 
 alert(preguntaNombre)
-alert(preguntaGustos)
-alert(colorFondo)
+
 
 
 function calcularSiEsMayorDeEdad() {
@@ -18,7 +16,16 @@ function calcularSiEsMayorDeEdad() {
 
 calcularSiEsMayorDeEdad(); 
 
+function preguntarSiLeGustaLaProgramación() {
+    if (preguntaGustos.toLocaleLowerCase() === "si") {
+        alert("Bienvenido, aqui aprendemos programación");
+    } else {
+        alert("Error, Actualiza la pagina y vuelve a intentar");
+    }
+}
+
+preguntarSiLeGustaLaProgramación();
 
 
 
-const preguntaCorreo = prompt("Si quieres recibir más infomación indicanos tu correo");
+
